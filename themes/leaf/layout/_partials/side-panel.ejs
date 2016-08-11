@@ -15,7 +15,30 @@
         <a href="/" title="link to homepage for <%= config.title %>"><img src="<%= theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
         <% } %>
 
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage"><%= config.title %></a></h1>
+        <%  var title_str = config.title;%>
+        <%  var title_arr = title_str.match(/./g);%>
+        <%  for (var i in title_arr){%>
+        <%      if(title_arr[i]=='♠'){%>
+        <%          title_class = 'panel-title-leaf-S';%>
+        <%      }else{%>
+        <%            var random = Math.random()*4; %>
+        <%            if(random>=0 && random<1){ %>
+        <%              title_class = 'panel-title-leaf-SW'; %>
+        <%            } %>
+        <%            if(random>=1 && random<2){ %>
+        <%              title_class = 'panel-title-leaf-SE'; %>
+        <%            } %>
+        <%            if(random>=2 && random<3){ %>
+        <%              title_class = 'panel-title-leaf-NW'; %>
+        <%            } %>
+        <%            if(random>=3 && random<=4){ %>
+        <%              title_class = 'panel-title-leaf-NE'; %>
+        <%            } %>
+        <%      }%>
+        
+                <li class="<%= title_class %>"><%= title_arr[i] %></li>
+        <%  } %>
+
         <hr class="panel-cover__divider" />
 
         <% if (config.subtitle) { %>

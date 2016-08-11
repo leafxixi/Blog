@@ -1244,6 +1244,7 @@ hr {
   padding: 0 60px; }
 
 .panel-main__content {
+  min-width: 400px;
   max-width: 620px;
   margin: 0 auto; }
 
