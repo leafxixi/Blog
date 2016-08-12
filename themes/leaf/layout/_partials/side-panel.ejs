@@ -75,6 +75,10 @@
         </div>
         <%- partial('_partials/social') %>
       </div>
+      <%if (!is_home()){  %>
+      <%- partial('_partials/article-bar') %>
+      <%  } %>
+      
 
     </div>
 

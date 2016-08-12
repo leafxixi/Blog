@@ -1,7 +1,7 @@
 .navigation__item-leaf a {
   padding: 10px 20px;
   border: 1px solid #006699;
-  border-radius: 20px;
+  border-radius: 17px;
   font-size: .9em;
   font-weight: bold;
   letter-spacing: 1px;
@@ -66,7 +66,7 @@
       opacity: 1; }
 
 .navigation--social {
-  margin-left: 100px; }
+  left: 3px; }
   .navigation--social a {
     padding: 6px 8px 6px 9px; }
     .navigation--social a .label {
@@ -76,62 +76,103 @@
       font-size: 1.7em; }
 
 .panel-title-leaf-NW {
-      display: inline-block;
-      color: #FFF;
-      font-size: 2.7em;
-      -webkit-animation-name: leafTitle-NW;
-              animation-name: leafTitle-NW;
-      -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
+    display: inline-block;
+    color: #FFF;
+    font-size: 2.7em;
+    -webkit-animation-name: leafTitle-NW;
+            animation-name: leafTitle-NW;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .panel-title-leaf-NE {
-      display: inline-block;
-      color: #FFF;
-      font-size: 2.7em;
-      -webkit-animation-name: leafTitle-NE;
-              animation-name: leafTitle-NE;
-      -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
+    display: inline-block;
+    color: #FFF;
+    font-size: 2.7em;
+    -webkit-animation-name: leafTitle-NE;
+            animation-name: leafTitle-NE;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .panel-title-leaf-SW {
-      display: inline-block;
-      color: #FFF;
-      font-size: 2.7em;
-      -webkit-animation-name: leafTitle-SW;
-              animation-name: leafTitle-SW;
-      -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
+    display: inline-block;
+    color: #FFF;
+    font-size: 2.7em;
+    -webkit-animation-name: leafTitle-SW;
+            animation-name: leafTitle-SW;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .panel-title-leaf-SE {
-      display: inline-block;
-      color: #FFF;
-      font-size: 2.7em;
-      -webkit-animation-name: leafTitle-SE;
-              animation-name: leafTitle-SE;
-      -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
+    display: inline-block;
+    color: #FFF;
+    font-size: 2.7em;
+    -webkit-animation-name: leafTitle-SE;
+            animation-name: leafTitle-SE;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .panel-title-leaf-S {
-      display: inline-block;
-      color: #EEE;
-      font-size: 2.5em;
+    display: inline-block;
+    color: #EEE;
+    font-size: 2.5em;
 }
+.article-bar{
+    text-align: left;
+    border-left: 1px solid #E0FFFF;
+}
+
+.article-bar-item{
+    list-style-type:none;
+    display: flex;    
+    justify-content: flex-start;    
+    margin: -5px -5px;
+    line-height: 0em;
+}
+.article-bar-sign{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #32CD32;
+    border: 3px solid #E0FFFF;
+    border-radius: 100%;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: -1px;
+}
+
+.article-bar-sign:hover{
+    -webkit-animation-name: leafShadow;
+            animation-name: leafShadow;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.article-bar-text{
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+
 
 @keyframes leafShadow {
   0%{
