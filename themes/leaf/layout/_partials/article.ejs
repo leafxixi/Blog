@@ -17,7 +17,7 @@ var post = page;
 
           <% if (post.categories && post.categories.length > 0){ %>
             <font class="categories">
-            &#8226; 分类:
+            &#8226; 鍒嗙被:
             <%- list_categories(post.categories, {
               show_count: false,
               class: 'categories',
@@ -27,7 +27,7 @@ var post = page;
           <% } %>
 
           <% if (post.tags && post.tags.length > 0){ %>
-             &#8226; 标签:
+             &#8226; 鏍囩�:
             <font class="tags">
               <%- list_tags(post.tags, {
                 show_count: false,
