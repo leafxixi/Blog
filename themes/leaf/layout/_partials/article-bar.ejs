@@ -2,7 +2,7 @@
 	<% function max(a, b) { %>
 	<%	return (a>b) ? a : b;	%>
 	<% } %>
-	<% var start_index = 1; %>
+	<% var start_index = -1; %>
 	<% var postLength = site.posts.length; %>
     <% site.posts.each(function(post, i){ %>
     <% 	if(is_post() && post.title == page.title){ %>
