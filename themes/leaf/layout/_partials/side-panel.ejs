@@ -1,6 +1,8 @@
 
 <% if (is_home()) { %> 
+
 <header class="panel-cover">
+     <!-- <canvas id="demo-canvas"></canvas> -->
 <% } else { %>
 <header class="panel-cover panel-cover--collapsed">
 <% } %>
@@ -9,7 +11,7 @@
 
   
     <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
+      <div class="panel-main__content">
 
         <% if (theme.logo) { %>
         <a href="/" title="link to homepage for <%= config.title %>"><img src="<%= theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
@@ -84,4 +86,7 @@
 
     <div class="panel-cover--overlay"></div>
   </div>
+
+
+
 </header>
