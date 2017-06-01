@@ -1,11 +1,5 @@
-archive_title: Archives
-category_title: Category
-tag_title: Tag
-rss_title: RSS
-excerpt_title: Read More
-
-comment: Comments
-
-pagination:
-  prev: Prev
-  next: Next
+category: 分类
+tag: 标签
+archive: 归档
+prev: 上一页
+next: 下一页
