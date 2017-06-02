@@ -26,16 +26,9 @@
 
 
     <div class="main-panel">
-        <div id="mobile-header">
-            <div id="main-button"> 
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-            <p class="head-title">THIS IS LEAF'S BLOG</p>
-        </div>
-      <%- partial('_partials/left-panel.ejs') %>
-      <%- partial('_partials/right-panel.ejs') %>
+      <%- partial('_partials/mobile-header', {}, {cache: true}) %>
+      <%- partial('_partials/left-panel.ejs', {}, {cache: true}) %>
+      <%- partial('_partials/right-panel.ejs', {}, {cache: true}) %>
     </div>
 
     <!-- js files -->

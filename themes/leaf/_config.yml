@@ -9,6 +9,7 @@ favicon: /favicon.png
 # Site logo
 # logo: /avatar.png
 
+
 nav:
   -
     - categories # display a collapsible category list
@@ -16,15 +17,10 @@ nav:
     - archives   # display a collapsible archive list
   -
     -
-      name: Homepage
+      name: 主页
       url: '/'
-    -
-      name: By Year
-      url: /archives
   -
     -
       name: Github
       url: https://github.com/
-    -
-      name: RSS
-      url: /atom.xml
+

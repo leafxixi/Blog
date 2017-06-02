@@ -1,54 +1,23 @@
-<%
-var post = page;
-%>
-
-<article class="post-container post-container--single">
-
-  <header class="post-header">
-    
-    <h1 class="post-title"><%= post.title %></h1>
-
-    <% if (type == 'post') { %>
-
-    <div class="post-meta">
-      <time datetime="<%= date(post.date, config.date_format) %>" class="post-meta__date date"><%= date(post.date, config.date_format) %></time> 
-
-      <span class="post-meta__tags tags">
-
-          <% if (post.categories && post.categories.length > 0){ %>
-            <font class="categories">
-            &#8226; 鍒嗙被:
-            <%- list_categories(post.categories, {
-              show_count: false,
-              class: 'categories',
-              style: 'none'
-            }) %>
-            </font>
-          <% } %>
-
-          <% if (post.tags && post.tags.length > 0){ %>
-             &#8226; 鏍囩�:
-            <font class="tags">
-              <%- list_tags(post.tags, {
-                show_count: false,
-                style: 'none',
-                class: 'tags'
-              }) %>
-            </font>
-          <% } %>
-
-      </span>
-    </div>
-    
-    <% } %>
-
-  </header>
-
-  <section id="post-content" class="article-content post">
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>">
+  <% if (post.link || post.title){ %>
+    <h1 class="article-header">
+      <%- post.title %>
+    </h1>
+  <% } %>
+  <%- partial('post/gallery') %>
+  <div class="article-info">
+    <%- partial('post/date') %>
+    <%- partial('post/category') %>
+    <%- partial('post/tag') %>
+  </div>
+  <div class="article-entry">
     <%- post.content %>
-  </section>
-
-  <%- partial('disqus') %>
-  <%- partial('duoshuo') %>
+  </div>
+  <footer class="article-footer">
+    <%- partial('post/cc') %>
+    <%- partial('post/jiathis') %>
+  </footer>
 </article>
 
+<%- partial('post/duoshuo') %>
+<%- partial('post/disqus') %>
