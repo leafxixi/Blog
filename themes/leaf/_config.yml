@@ -8,7 +8,7 @@ favicon: /favicon.png
 
 # Site logo
 # logo: /avatar.png
-
+maxContentWidth: 1000px
 
 nav:
   -

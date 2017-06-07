@@ -1,6 +1,9 @@
 ---
-title: hexo 主题配置
+title: hexo config
 date: 2016-08-10 08:44:00
 tags: test
+categories: test
 ---
-哈哈好
+HAha
+<!-- more -->
+hah
