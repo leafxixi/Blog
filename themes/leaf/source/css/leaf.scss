@@ -313,6 +313,11 @@ a:hover {
 .post-list .article-entry {
   font-size: 14px;
 }
+.java {
+  color: #718c00;
+  font-family:Arial;
+  font-style:itelic;
+}
 @media screen and (max-width: 768px){
   .main-panel {
     top: 0px;
@@ -325,8 +330,9 @@ a:hover {
     left: -500px;
     width: 400px;
     max-width: 100%;
+    min-width:350px;
     height: 100%;
-    z-index: 2;
+    z-index: 998;
     transition-duration: 0.3s;
   }
 
