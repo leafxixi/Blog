@@ -13,7 +13,11 @@
   <div class="article-entry">
     <%- post.content %>
   </div>
-
+  <footer class="article-footer">
+    <%- partial('post/cc') %>
+    <%- partial('post/jiathis') %>
+  </footer>
 </article>
 
-
+<%- partial('post/duoshuo') %>
+<%- partial('post/disqus') %>
