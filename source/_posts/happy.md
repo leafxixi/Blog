@@ -5,6 +5,7 @@ tags: test
 categories: test
 ---
 
-![Image text](https://raw.githubusercontent.com/leafxixi/Blog/master/themes/leaf/source/images/dota2.jpg)
+![Image text](https://raw.githubusercontent.com/leafxixi/Blog/master/themes/leafxixi/source/images/dota2.jpg)
+
 
 <!-- more -->
